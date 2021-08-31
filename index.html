@@ -1,0 +1,48 @@
+<!--
+    Original design by: KnifeCircus
+    Tutorial Link: https://youtu.be/3SsYZDJdeXk
+-->
+
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script> 
+        function changeImage()
+        {
+        var img = document.getElementById("toon");
+        img.src="dog.png";
+        return false;
+        }
+    </script>
+</head>
+<body>
+    <button id="clickme" onclick="changeImage();">Click to change</button>
+    <div id="game">
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="character">
+            <img id="toon" src="bird.png" height="40" width="40">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+<!--
+bird png <a href='https://pngtree.com/so/Cute'>Cute png from pngtree.com/</a>
+dog png <a href='https://pngtree.com/so/cartoon'>cartoon png from pngtree.com/</a>
+
+on change?
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+-->
